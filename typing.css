@@ -1,0 +1,66 @@
+*, ::before ,::after {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    color: #555;
+    height: 100%;
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+.page {
+    width: 750px;
+    height: 637px;
+    margin-top: 20px;
+    font-size: 19px;
+    min-height: 637px;
+    outline: none;
+    background: white;
+    border-radius: 5px;;
+}
+.content {
+    padding: 30px;
+}
+.heading {
+    margin: 5px 0px 24px;
+}
+.TPCMN {
+    margin: 20px -31px;
+    height: 355px;
+    padding: 0px 185px 0px 30px;
+    position: relative;
+    border: 1px solid rgb(221, 221, 221);
+    overflow: hidden;
+}
+.worktop {
+    display: block;
+    top: 209.4px;
+    left: 144.9px;
+    background: #5293e2;
+    color: white;
+    padding: 10px 10px 10px 17px;
+    border-radius: 8px;
+    font-size: 16px;
+    white-space: nowrap;
+    position: fixed;
+    z-index: 101;
+    margin-top: -48px;
+    margin-left: -26px;
+}
+.worktop:before {
+    content: 'Start Typing';
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: -22px;
+    width: 0;
+    margin-right: -24px;
+    border-top: solid 10px #5293e2;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}

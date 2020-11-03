@@ -5,81 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container {
-            width: 800px;
-            height: 400px;
-            margin: 0 auto;
-            background-color: #bfa;
-        }
-
-        .text {
-            width: 400px;
-            height: 200px;
-            margin: 0 auto;
-        }
-
-        .button {
-            float: left;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-size: 25px;
-            padding-left: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="./againin.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="text"><span class="1">h</span><span class="2">e</span><span class="3">l</span><span
-                class="4">l</span><span class="5">o</span><span class="6"> </span><span class="7">w</span><span
-                class="8">h</span><span class="9">a</span><span class="10">t</span><span class="11"> </span><span
-                class="12">i</span><span class="13">s</span><span class="14"> </span><span class="15">y</span><span
-                class="16">o</span><span class="17">u</span><span class="18">r</span><span class="19"> </span><span
-                class="20">n</span><span class="21">a</span><span class="22">m</span><span class="23">e</span><span
-                class="24"> </span></div>
-        <div class="button1"><button>开始</button></div>
-    </div>
-    <script>
-        var test1 = document.querySelectorAll('span');
-        var test = new Array();
-        for (var t = 0; t < test1.length; t++) {
-            test[t] = test1[t];
-        }
-        var button = document.querySelector('button');
-        var i = 0;
-        var count = 0;
-        var flag = 0;
-        var flag2 = 0;
-        var fx1 = 0;
-        function h(e) {
-            i++;
-            if (String.fromCharCode(e.keyCode.toString()).toLowerCase() == test[i - 1].innerHTML) { test[i - 1].style.color = 'blue'; test[i - 1].style.backgroundColor = 'rgba(0,0,0,.3)'; test[i - 1].style.width = 10 + 'px'; test[i - 1].style.height = 15 + 'px'; }
-            else { test[i - 1].style.color = 'red'; test[i - 1].style.backgroundColor = 'rgba(0,0,0,.3)'; test[i - 1].style.width = 10 + 'px'; test[i - 1].style.height = 15 + 'px'; }
-        }
-        var fx = function () {
-            var text = addEventListener('keydown', h, false);
-        }
-        var zero = function () {
-            flag = 0; count = 0; i = 0;
-            for (var temp1 = 0; temp1 < test.length; temp1++) {
-                test[temp1].style.color = '#000';//清空
-                test[temp1].style.backgroundColor = 'transparent';
-            }
-        }
-        button.addEventListener('click', function () {
-            if (!flag) {
-                flag += 1;; fx();//按钮控制
-                this.innerHTML = '结束'; console.log('i=' + i + 'count=' + count + 'flag=' + flag + ' ');
-            }
-            else { zero(); this.innerHTML = '开始'; console.log('i=' + i + 'count=' + count + 'flag=' + flag + ' '); }
-        })
+    <div class="page">
+        <div class="content">
+        <span class="heading"></span>
+        <div class="TPCMN">
+            <div class="wordtop"></div>
+            <div class="txtbox1">
+                <div class="txtbox2">
+                    <div class="txtbox3">
+                        <div class="txt">
+                            <div class="temp">
+                                <span class="normal"></span>
+                            </div>
+                            <span class="line">
+                                <span class="token _fcs">
+                                    <span class="_toknmeta"></span>
+                                    <span class="tokenunit _clr">t</span>
+                                    <span class="tokenunit _clr">y</span>
+                                    <span class="tokenunit _clr">p</span>
+                                    <span class="tokenunit _clr">e</span>
+                                    <span class="tokenunit _clr">&nbsp;<i> </i></span>
+                                    <span class="token">
+                                        <span class="_toknmeta"></span>
+                                        <span class="tokenunit _clr">t</span>
+                                        <span class="tokenunit _clr">h</span>
+                                        <span class="tokenunit _clr">e</span>
+                                        <span class="tokenunit _clr">s</span>
+                                        <span class="tokenunit _clr">e</span>
+                                        <span class="tokenunit _clr">&nbsp;<i> </i></span>
+                                    </span>
+                                    <span class="token">
+                                        <span class="_toknmeta"></span>
+                                        <span class="tokenunit _clr">w</span>
+                                        <span class="tokenunit _clr">o</span>
+                                        <span class="tokenunit _clr">r</span>
+                                        <span class="tokenunit _clr">d</span>
+                                        <span class="tokenunit _clr">s</span>
+                                        <span class="tokenunit _clr">;</span>
+                                        <span class="tokenunit _clr">&nbsp;<i> </i></span>
+                                    </span>
+                                    <span class="token">
+                                        <span class="_toknmeta"></span>
+                                        <span class="tokenunit _clr">t</span>
+                                        <span class="tokenunit _clr">y</span>
+                                        <span class="tokenunit _clr">q</span>
+                                        <span class="tokenunit _clr">y</span>
+                                        <span class="tokenunit _clr">&nbsp;<i> </i></span>
+                                    </span>
+                                    <span></span>
+                                </span>
+                                <span class="line">
+                                    <span class="token">
+                                        <span class="_toknmeta"></span>
+                                        <span class="tokenunit _clr">p</span>
+                                        <span class="tokenunit _clr">q</span>
+                                        <span class="tokenunit _clr">o</span>
+                                        <span class="tokenunit _clr">e</span>
+                                    </span>
+                                    <span></span>
+                                </span>
+                        </div>
 
-        // container.addEventListener('onfcous',function(){
-        //     flag = 0;
-        // })
-    </script>
+                    </div>
+                </div>
+            </div>
+            <div class="stats"></div>
+        </div>
+        <div class="progress"></div>
+    </div>
+    </div>
 </body>
 
 </html>
