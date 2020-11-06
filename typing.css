@@ -16,33 +16,9 @@ body {
     position: fixed;
     z-index: 101;
     margin-top: -48px;
-    margin-left: -26px;
+    margin-left: -24px;
 }
-
-.TPCMN .pause-tooltip:before {
-    content: ' ';
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: -22px;
-    width: 0;
-    margin-right: -24px;
-    border-top: solid 10px #5293e2;
-    border-left: solid 10px transparent;
-    border-right: solid 10px transparent;
-}
-
-.tpmodes.normal.hide-bottom-line {
-    border-bottom: none;
-}
-
-.tpmodes {
-    outline: none;
-}
-
-.small, small {
-    font-size: 85%;
-}
-
+ 
 .typable.mono_standard {
     font-family: 'Droid Sans Mono', courier;
     color: #757575;
@@ -50,7 +26,6 @@ body {
 
 .typable {
     line-height: normal;
-    font-variant-ligatures: none;
 }
 
 .typable .normal_cursor {
@@ -75,10 +50,6 @@ body {
     font-size: 25px;
 }
 
-.tpmodes.normal ._fcs {
-    border-top: 2px solid #ddd;
-    border-radius: 5px;
-}
 
 .typable .token {
     white-space: nowrap;
@@ -102,49 +73,20 @@ body {
     justify-content: center;
 }
 
-svg:not(:root) {
-    overflow: hidden;
-}
-
 .placement-progress {
     height: 16px;
-    background: #f1f2f2;
+    background-color: #64e5c7;
     margin: 70px 0 40px;
-    border-left: solid 75px #64e5c7;
     height: 16px;
 }
 
-.lesson-flag {
-    width: 15px;
-    position: absolute;
-    top: -17px;
-    right: 0;
+.placement-progress::before {
+    content: '0';
 }
 
-.lesson-label {
-    position: absolute;
-    color: #228776;
-    top: -21px;
-    right: 25px;
-    font-size: 12px;
-    white-space: nowrap;
-}
 
 .pull-right {
     float: right!important;
-}
-
-.btn-lg {
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #3097D1;
-    border-color: #2a88bd;
 }
 
 .btn {
@@ -157,4 +99,11 @@ svg:not(:root) {
     cursor: pointer;
     border: 1px solid transparent;
     user-select: none;
+    color: #fff;
+    background-color: #3097D1;
+    border-color: #2a88bd;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
 }
