@@ -101,16 +101,17 @@ var fx3 = function() {//暂停按钮 调整时间以及键盘输入
 }
 
 var fx4 = function() {//变量清空
-    for(var temp = 0; temp < words.length ; temp++)//样式清空
-    {
-        words[temp].style.backgroundColor = 'white';
-        words[temp].style.color = '#757575';
-    }
-    document.removeEventListener('keydown',fx2);//取消键盘事件
-    i = 0; count = 0; startTime = 0;tempTime = 0;timeouttime = 0;jugall = 0; jugrig = 0;
-    progress.style.width = 5 +'px';
-    speed.innerHTML = '0wpx';
-    accuracy.innerHTML = '0%';
+    // for(var temp = 0; temp < words.length ; temp++)//样式清空
+    // {
+    //     words[temp].style.backgroundColor = 'white';
+    //     words[temp].style.color = '#757575';
+    // }
+    // document.removeEventListener('keydown',fx2);//取消键盘事件
+    // i = 0; count = 0; startTime = 0;tempTime = 0;timeouttime = 0;jugall = 0; jugrig = 0;
+    // progress.style.width = 5 +'px';
+    // speed.innerHTML = '0wpx';
+    // accuracy.innerHTML = '0%';
+    window.location.reload();
 }
 
 startButton.addEventListener('click',fx1);
